@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.TextField?>
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.calculatoronlyexception.HelloController">
+    <children>
+        <TextField fx:id="display" alignment="CENTER" editable="false" promptText="0" styleClass="display" VBox.vgrow="NEVER" />
+        <HBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0" spacing="5.0">
+            <Button onAction="#handleDigit" text="7" />
+            <Button onAction="#handleDigit" text="8" />
+            <Button onAction="#handleDigit" text="9" />
+            <Button onAction="#handleOperator" text="*" />
+        </HBox>
+        <HBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0" spacing="5.0">
+            <Button onAction="#handleDigit" text="4" />
+            <Button onAction="#handleDigit" text="5" />
+            <Button onAction="#handleDigit" text="6" />
+            <Button onAction="#handleOperator" text="-" />
+        </HBox>
+        <HBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0" spacing="5.0">
+            <Button onAction="#handleDigit" text="1" />
+            <Button onAction="#handleDigit" text="2" />
+            <Button onAction="#handleDigit" text="3" />
+            <Button onAction="#handleOperator" text="+" />
+        </HBox>
+        <HBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0" spacing="5.0">
+            <Button onAction="#handleDigit" text="0" />
+            <Button onAction="#clear" text="C" />
+            <Button onAction="#calculate" text="=" />
+            <Button onAction="#handleOperator" text="/" />
+        </HBox>
+        <HBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0" spacing="5.0">
+            <Button onAction="#handleOperator" text="sqrt" />
+            <Button onAction="#handleDigit" text="." />
+            <Button onAction="#handleOperator" text="^" />
+        </HBox>
+    </children>
+</VBox>
